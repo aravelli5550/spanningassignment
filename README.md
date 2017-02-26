@@ -10,12 +10,23 @@ This Application has been configured with H2 Database with is in memory Database
 
 Endpoints Examples:
 
-method: Post http://localhost:8080/atm-poc/userName/{usersindb}/withdraw input: Userindb: user1 pin: 1234 amount: can be any
+method: Post http://localhost:8080/atm-poc/userName/{usersindb}/withdraw 
+input:
+ Userindb: user1 
+ pin: 1234 
+ amount: can be any
 
 method: Post http://localhost:8080/atm-poc/userName/{usersindb}/deposit
 
-input: Userindb: user1 pin: 1234 amount: can be any
+input: 
+Userindb: user1 
+pin: 1234 
+amount: can be any
 
 method: Post http://localhost:8080/atm-poc/userName/{userindb}/balance
 
 input: Userindb: user1 pin: 1234
+
+Application Setup:
+
+Import the project as Maven Project in any IDE. Run the Maven clean and Maven Build for load the Jar and Build the application. Check for the target folder in applicated to verify the build and to run this application since Spring boot has a inbuilt tomcat server. we can run this as a static Application i.e. Run as Springboot Application.
